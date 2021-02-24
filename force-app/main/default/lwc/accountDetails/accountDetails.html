@@ -1,0 +1,11 @@
+<template>
+    <lightning-card if:true={caseId} title={name} class="slds-m-bottom_medium">
+        <lightning-button variant="brand" slot="actions" label="Go to record" onclick={onGoToRecord}>
+        </lightning-button>
+        <div class="slds-p-horizontal_small">
+            <p><lightning-formatted-email value={annualRevenue}></lightning-formatted-email></p>
+            <p><lightning-formatted-phone value={phone}></lightning-formatted-phone></p>
+            <p>{industry}</p>
+        </div>
+</lightning-card>
+</template>
